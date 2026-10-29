@@ -38,6 +38,7 @@ DESCRIBE_REGISTRY: dict[tuple[str, str], tuple[str, str, str, str | None]] = {
     ("iam", "policies"): ("iam", "get_policy", "PolicyArn", "Policy"),
     ("secretsmanager", "secrets"): ("secretsmanager", "describe_secret", "SecretId", None),
     ("kms", "keys"): ("kms", "describe_key", "KeyId", "KeyMetadata"),
+    ("bedrock", "foundation_models"): ("bedrock", "get_foundation_model", "modelIdentifier", "modelDetails"),
     ("acm", "certificates"): ("acm", "describe_certificate", "CertificateArn", "Certificate"),
     ("cognito-idp", "user_pools"): ("cognito-idp", "describe_user_pool", "UserPoolId", "UserPool"),
     ("cognito-identity", "identity_pools"): ("cognito-identity", "describe_identity_pool", "IdentityPoolId", None),
@@ -77,6 +78,7 @@ DESCRIBE_REGISTRY: dict[tuple[str, str], tuple[str, str, str, str | None]] = {
 # the wrong field (e.g. Arn before Name, or Name before Id).
 _PREFERRED_ID_FIELD: dict[tuple[str, str], str] = {
     ("route53", "hosted_zones"): "Id",
+    ("bedrock", "foundation_models"): "modelId",
     ("events", "rules"): "Name",
     ("events", "event_buses"): "Name",
     ("wafv2", "web_acls"): "Name",

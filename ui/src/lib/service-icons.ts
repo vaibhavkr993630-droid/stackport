@@ -26,6 +26,7 @@ import {
   Cog,
   Network,
   FolderTree,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react"
 
@@ -49,6 +50,7 @@ const LUCIDE_ICON_MAP: Record<string, LucideIcon> = {
   kinesis: Activity,
   route53: Globe,
   kms: Key,
+  bedrock: Sparkles,
   cloudformation: Layers,
   states: Workflow,
   stepfunctions: Workflow,

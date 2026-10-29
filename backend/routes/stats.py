@@ -50,6 +50,7 @@ SERVICE_REGISTRY: dict[str, list[tuple[str, str, str, str]]] = {
     ],
     "route53": [("hosted_zones", "route53", "list_hosted_zones", "HostedZones")],
     "kms": [("keys", "kms", "list_keys", "Keys")],
+    "bedrock": [("foundation_models", "bedrock", "list_foundation_models", "modelSummaries")],
     "cloudformation": [("stacks", "cloudformation", "list_stacks", "StackSummaries")],
     "stepfunctions": [
         ("state_machines", "stepfunctions", "list_state_machines", "stateMachines"),

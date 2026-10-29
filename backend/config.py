@@ -24,7 +24,7 @@ STACKPORT_SERVICES: str = os.environ.get(
     "s3,sqs,sns,dynamodb,lambda,iam,logs,ssm,secretsmanager,kinesis,events,ec2,"
     "route53,kms,cloudformation,stepfunctions,rds,ecs,monitoring,ses,acm,wafv2,"
     "ecr,elasticache,glue,athena,apigateway,firehose,cognito-idp,cognito-identity,"
-    "elasticmapreduce,elasticloadbalancing,elasticfilesystem,cloudfront,appsync",
+    "elasticmapreduce,elasticloadbalancing,elasticfilesystem,cloudfront,appsync,bedrock",
 )
 LOG_LEVEL: str = os.environ.get("LOG_LEVEL", "INFO").upper()
 
